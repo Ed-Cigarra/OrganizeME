@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5f248b;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    background-color:  rgb(213, 89, 218);
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: #5f248b 4px solid;
+    display: flex;
+    transition: margin-left 0.5s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+a{
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 25px;
+    
+    
+}
+.ml{
+    margin-left: 20px;
+    color: white;
+    
+}
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(213, 89, 218);
+    border-right: #5f248b 4px solid;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+
+}
+nav a{
+    font-size: 25px;
+    padding: 15px 10px 12px 32px;
+    color: white;
+    display: block;
+    
+    
+    
+}
+
+nav button{
+    font-size: 25px;
+    padding: 15px 10px 12px 32px;
+    color: white;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    
+    
+}
+nav button:hover{
+    background-color: #5f248b;
+    color: white;
+    margin: 0%;
+    border-radius: 35px;
+    
+    
+}
+nav a:hover{
+    background-color: #5f248b;
+    color: white;
+    margin: 0%;
+    border-radius: 35px;
+    
+    
+}
+main{
+    padding: 10px;
+    margin: 20px;
+    transition: margin-left 0.5s;
+    color: white;
+}
+.logomarca{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 7px;
+}
+.fm{
+   
+    width: 40px;
+    height: 40px;
+    
+    
+}
+.img3{
+    width: 25px;
+    height: 25px;
+    margin: 0px 4px;
+    opacity: 0;
+    transition:  opacity 0.3s;
+    justify-content: flex-start;
+    
+}
+.principal{
+    background-color: rgb(213, 89, 218);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.inputp{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    
+}
+
+.buttonp{
+    padding: 10px 20px;
+    background-color: #5f248b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.buttonp:hover{
+    background-color: #4a1f6e;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.listap{
+    width: 100%;
+    list-style-type: none;
+    margin-top: 20px;
+    
+}
+.lista{
+    background-color: white;
+    color: black;
+    padding:  10px;
+    gap: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+.lista:hover .img3{
+    opacity: 1;
+    
+}
+.done{
+    text-decoration: line-through;
+    background-color: #4a1f6e;
+    
+}
+.important{
+    border-left: 10px solid gold;
+    
+    
+}
+ /* celular */
+@media (max-width: 600px) {
+
+  
+    header {
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .logomarca {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    
+    .ml {
+        font-size: 32px;
+        margin-left: 10px;
+    }
+
+    
+    nav {
+        width: 0;
+        max-width: 230px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 12px 15px;
+    }
+
+    .fm {
+        width: 35px;
+        height: 35px;
+    }
+
+   
+    main {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    main h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    main p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    
+    .principal {
+        width: 95%;
+        padding: 18px;
+    }
+
+    
+    .inputp {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .buttonp {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    
+    .lista {
+        font-size: 17px;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .img3 {
+        width: 30px;
+        height: 30px;
+        opacity: 1; 
+    }
+
+    .lista p {
+        flex: 1;
+    }
+}
