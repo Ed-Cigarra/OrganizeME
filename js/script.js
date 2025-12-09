@@ -21,11 +21,20 @@ const listacompleta = document.querySelector('.listap');
 
 
 
-let listadeitens = [];
+ let listadeitens = [];
+
 
 function adicionartarefa() {
-  listadeitens.push({item: input.value, concluida: false, importante: false});
-  input.value = "";
+ 
+  console.log(listadeitens)
+listadeitens.push({
+  item: input.value,
+  concluida: false,
+  importante: false
+});
+
+input.value = ""; // limpou depois
+
   mostrartarefas();
 }
 
@@ -63,11 +72,17 @@ function deletar(posicao) {
  function carregar() {
     listadeitens = JSON.parse(localStorage.getItem('mlist'));
   const dados = localStorage.getItem('mlist');
-if (dados) {
-    listadeitens = JSON.parse(dados);
-    mostrartarefas();
 
-}}
+  if (dados) {
+    listadeitens = JSON.parse(dados);
+  } else {
+    listadeitens = [];  // <-- impede que vire null
+  }
+
+  mostrartarefas();
+  
+
+}
 
 
 function marcarComoConcluida(posicao) {
@@ -100,7 +115,6 @@ function marcarimportante(posicao) {
   // mostrartarefas();
   listadeitens[posicao].importante = !listadeitens[posicao].importante
   mostrartarefas();
-r
 }
 carregar();
 
